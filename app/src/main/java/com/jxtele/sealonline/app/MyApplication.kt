@@ -9,6 +9,7 @@ import com.jxtele.sealonline_library.api.SignetOnline
  * Description:
  */
 class MyApplication : Application() {
+
     companion object {
         lateinit var application: MyApplication
     }
