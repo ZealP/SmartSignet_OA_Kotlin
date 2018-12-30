@@ -6,7 +6,6 @@ import com.jxtele.sealonline_library.api.SignetOnline
 /**
  * Author: Dev_@ZealP
  * Created On: 2018/12/28
- * Email: zealpeng@163.com
  * Description:
  */
 class MyApplication : Application() {
