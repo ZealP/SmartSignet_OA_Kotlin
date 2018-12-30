@@ -1,4 +1,4 @@
-## SmartSignet_OA_Kotlin
+## SmartSignet_OA_Kotlin(停止维护)
 
 政企(信产)研发中心 OA智能签章框架Kotlin版
 
