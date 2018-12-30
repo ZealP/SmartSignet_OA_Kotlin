@@ -68,7 +68,7 @@ abstract class SkCallBack<T> : CallBack<T> {
 
     override fun onCompleted() {}
 
-    override fun onStart() {}
+    override fun onStart() {resultCallback?.onStart()}
 
 //    abstract fun resultMsg(msg: BaseMsg<*>?, isResultErr: Boolean?)
 }

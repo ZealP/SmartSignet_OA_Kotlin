@@ -73,7 +73,7 @@ class SignInterceptor : BaseDynamicInterceptor<SignInterceptor> {
                 rootMap[s] = newRequest.url().queryParameterValues(s)
         }
 
-        val digest = encodeReqSecretString(rootMap, "")
+        val digest = encodeReqSecretString(rootMap)
 
         var url = newRequest.url().toString()
         url += "&sign=$digest"
@@ -84,7 +84,7 @@ class SignInterceptor : BaseDynamicInterceptor<SignInterceptor> {
     /**
      * 签名加密字段
      */
-    private fun encodeReqSecretString(map: HashMap<String, List<String>>, secretStr: String): String {
+    private fun encodeReqSecretString(map: HashMap<String, List<String>>): String {
         val mMapResult = StringBuffer()
         val key_arr = map.keys.toTypedArray()
         Arrays.sort(key_arr)

@@ -9,7 +9,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.jxtele.sealonline"
+        applicationId "com.jxtele.smartsignet_oa_kotlin"
         minSdkVersion 17
         targetSdkVersion 28
         versionCode 1
@@ -38,5 +38,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    api project(':sealonline_library')
+//    implementation 'com.github.ZealP:SmartSignet_OA:1.0.1'
+    api project(':SmartSignet_OA_Library_Kotlin')
 }

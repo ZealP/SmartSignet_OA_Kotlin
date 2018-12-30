@@ -2,9 +2,9 @@ package com.jxtele.sealonline.act
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import app.MyApplication
 import com.jxtele.sealonline.R
-import com.jxtele.sealonline_library.api.SealOnline
+import com.jxtele.sealonline.app.MyApplication
+import com.jxtele.sealonline_library.api.SignetOnline
 import com.jxtele.sealonline_library.callback.ResultCallBack
 import com.jxtele.sealonline_library.net.http.exception.ApiException
 import com.jxtele.sealonline_library.utils.ToastUtil
@@ -39,7 +39,7 @@ class MainAct : AppCompatActivity() {
          * @param version 请求版本号
          * @param ResultCallback 返回结果回调
          */
-        SealOnline?.getSignList("1.0.8", object : ResultCallBack() {
+        SignetOnline?.getSignList("1.0.8", object : ResultCallBack() {
             /**
              * 返回请求成功
              * @param data 返回印章列表信息
@@ -86,7 +86,7 @@ class MainAct : AppCompatActivity() {
          * @param applyReason 合同名称
          * @param ResultCallback 返回结果回调
          */
-        SealOnline?.applySignet("1.0.8", 1, 5 * 60, "9ffq99f89q99vq99f", "企业员工劳务合同", object : ResultCallBack() {
+        SignetOnline?.applySignet("1.0.8", 1, 5 * 60, "9ffq99f89q99vq99f", "企业员工劳务合同", object : ResultCallBack() {
             /**
              * 返回请求成功
              * @param data 返回申请流程编号
@@ -131,7 +131,7 @@ class MainAct : AppCompatActivity() {
          * @param serialNo 印章设备序列号
          * @param ResultCallback 返回结果回调
          */
-        SealOnline?.agreeApprovalWorkflow("1.0.8", "9ffq99f89q99vq99f", "9ffq99f89q99vq99f", object : ResultCallBack() {
+        SignetOnline?.agreeApprovalWorkflow("1.0.8", "9ffq99f89q99vq99f", "9ffq99f89q99vq99f", object : ResultCallBack() {
             /**
              * 返回请求成功
              * @param data 返回null
@@ -176,7 +176,7 @@ class MainAct : AppCompatActivity() {
          * @param serialNo 印章设备序列号
          * @param ResultCallback 返回结果回调
          */
-        SealOnline?.refusedApprovalWorkflow(
+        SignetOnline?.refusedApprovalWorkflow(
             "1.0.8",
             "9ffq99f89q99vq99f",
             "9ffq99f89q99vq99f",
@@ -226,7 +226,7 @@ class MainAct : AppCompatActivity() {
          * @param clientid 印章设备编码
          * @param ResultCallback 返回结果回调
          */
-        SealOnline?.signetQrCodeScan(
+        SignetOnline?.signetQrCodeScan(
             "1.0.8",
             "9ffq99f89q99vq99f",
             "9ffq99f89q99vq99f",

@@ -1,9 +1,7 @@
 package com.jxtele.sealonline_library.api
 
 import android.app.Application
-import android.content.Context
 import com.jxtele.sealonline_library.callback.ResultCallBack
-import com.jxtele.sealonline_library.contact.ApiContact
 import com.jxtele.sealonline_library.net.http.EasyHttp
 import com.jxtele.sealonline_library.net.http.cache.model.CacheMode
 import com.jxtele.sealonline_library.net.interceptor.SignInterceptor
@@ -16,7 +14,7 @@ import java.util.concurrent.TimeUnit
  * Email: zealpeng@163.com
  * Description:
  */
-object SealOnline {
+object SignetOnline {
 
     private var mApp: Application? = null
     private var mOpenId: String? = null
@@ -47,7 +45,7 @@ object SealOnline {
      */
     fun getSignList(version: String?, resultCallback: ResultCallBack?) {
         mApp?.let {
-            SmartSeal.mSmartSeal.getSignetList(mApp!!, mOpenId, version, resultCallback)
+            SmartSignet.mSmartSignet.getSignetList(mApp!!, mOpenId, version, resultCallback)
         }
     }
 
@@ -69,7 +67,7 @@ object SealOnline {
         resultCallback: ResultCallBack?
     ) {
         mApp?.let {
-            SmartSeal.mSmartSeal.applySignet(
+            SmartSignet.mSmartSignet.applySignet(
                 mApp!!,
                 mOpenId,
                 version,
@@ -91,7 +89,7 @@ object SealOnline {
      */
     fun refusedApprovalWorkflow(version: String?, applyId: String?, serialNo: String?, resultCallback: ResultCallBack?) {
         mApp?.let {
-            SmartSeal.mSmartSeal.refusedApprovalWorkflow(mApp!!, mOpenId, version, applyId, serialNo, resultCallback)
+            SmartSignet.mSmartSignet.refusedApprovalWorkflow(mApp!!, mOpenId, version, applyId, serialNo, resultCallback)
         }
     }
 
@@ -104,7 +102,7 @@ object SealOnline {
      */
     fun agreeApprovalWorkflow(version: String?, applyId: String?, serialNo: String?, resultCallback: ResultCallBack?) {
         mApp?.let {
-            SmartSeal.mSmartSeal.agreeApprovalWorkflow(mApp!!, mOpenId, version, applyId, serialNo, resultCallback)
+            SmartSignet.mSmartSignet.agreeApprovalWorkflow(mApp!!, mOpenId, version, applyId, serialNo, resultCallback)
         }
     }
 
@@ -118,7 +116,7 @@ object SealOnline {
      */
     fun signetQrCodeScan(version: String?, serialNum: String?, applyId: String?, clientid: String?, resultCallback: ResultCallBack?){
         mApp?.let {
-            SmartSeal.mSmartSeal.signetQrCodeScan(mApp!!, mOpenId, version, serialNum, applyId, clientid, resultCallback)
+            SmartSignet.mSmartSignet.signetQrCodeScan(mApp!!, mOpenId, version, serialNum, applyId, clientid, resultCallback)
         }
     }
 

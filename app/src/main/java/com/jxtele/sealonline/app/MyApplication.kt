@@ -1,7 +1,7 @@
-package app
+package com.jxtele.sealonline.app
 
 import android.app.Application
-import com.jxtele.sealonline_library.api.SealOnline
+import com.jxtele.sealonline_library.api.SignetOnline
 
 /**
  * Author: Dev_@ZealP
@@ -26,6 +26,6 @@ class MyApplication : Application() {
          * @param secretKey 平台匹配密钥
          * @param serviceUrl 服务器地址
          */
-        SealOnline.initSealOnline(this, "xxx", "xxx", "http://www.baidu.com")
+        SignetOnline.initSealOnline(this, "xxx", "xxx", "http://www.baidu.com")
     }
 }

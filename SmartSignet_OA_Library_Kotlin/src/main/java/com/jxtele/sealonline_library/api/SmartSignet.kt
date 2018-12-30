@@ -15,13 +15,13 @@ import com.jxtele.sealonline_library.net.http.exception.ApiException
  * Email: zealpeng@163.com
  * Description:
  */
-class SmartSeal {
+class SmartSignet {
 
     private constructor()
 
     companion object {
-        val mSmartSeal: SmartSeal by lazy(mode = LazyThreadSafetyMode.SYNCHRONIZED) {
-            SmartSeal()
+        val mSmartSignet: SmartSignet by lazy(mode = LazyThreadSafetyMode.SYNCHRONIZED) {
+            SmartSignet()
         }
     }
 

@@ -1,1 +1,1 @@
-include ':app', ':sealonline_library'
+include ':app', ':SmartSignet_OA_Library_Kotlin'
