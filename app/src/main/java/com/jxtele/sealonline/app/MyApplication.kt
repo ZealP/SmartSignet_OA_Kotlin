@@ -3,11 +3,6 @@ package com.jxtele.sealonline.app
 import android.app.Application
 import com.jxtele.sealonline_library.api.SignetOnline
 
-/**
- * Author: Dev_@ZealP
- * Created On: 2018/12/28
- * Description:
- */
 class MyApplication : Application() {
 
     companion object {
@@ -17,6 +12,7 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         application = this
+
         /**
          * 初始化组件
          * @param application Application对象
