@@ -18,7 +18,6 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         application = this
-
         /**
          * 初始化组件
          * @param application Application对象
