@@ -2,6 +2,12 @@ package com.jxtele.sealonline_library.utils;
 
 import java.util.*;
 
+/**
+ * Author: Dev_@ZealP
+ * Created On: 2018/12/27
+ * Email: zealpeng@163.com
+ * Description:
+ */
 public class CompareSortUtil {
     /**
      * Map按key进行排序
