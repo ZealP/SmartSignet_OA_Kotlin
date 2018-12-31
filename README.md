@@ -9,7 +9,7 @@
 
 ## 版本说明
 ### 最新版本
-[![release](https://img.shields.io/badge/release-V1.0.1-orange.svg)](https://github.com/ZealP/SmartSignet_OA)
+[![release](https://img.shields.io/badge/release-1.0.1-orange.svg)](https://github.com/ZealP/SmartSignet_OA)
 ### 更新日志：
      v1.0.1：完成OA智能签章框架Kotlin版的研发工作，开放初版体验；
 
