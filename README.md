@@ -2,7 +2,7 @@
 
 政企(信产)研发中心 OA智能签章框架Kotlin版
 
-想使用Java版本的框架请移步 [OA智能签章框架Java版](https://github.com/ZealP/SmartSignet_OA_Kotlin)
+想使用Java版本的框架请移步 [OA智能签章框架Java版](https://github.com/ZealP/SmartSignet_OA_Java)
 
 ## 联系方式
 使用存在问题可联系zealpeng@163.com
@@ -26,7 +26,7 @@ allprojects {
     }
 
 dependencies {
-    implementation 'com.github.ZealP:SmartSignet_OA:最新版本号'
+    implementation 'com.github.ZealP:SmartSignet_OA_Kotlin:最新版本号'
 }
 ```
 ### 全局配置
