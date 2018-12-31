@@ -9,13 +9,14 @@
 
 ## 版本说明
 ### 最新版本
-[![release](https://img.shields.io/badge/release-1.0.1-orange.svg)](https://github.com/ZealP/SmartSignet_OA)
+[![beta](https://img.shields.io/badge/beta-1.0.1-orange.svg)](https://github.com/ZealP/SmartSignet_OA_Kotlin)
 ### 更新日志：
      v1.0.1：完成OA智能签章框架Kotlin版的研发工作，开放初版体验；
 
 <!-- ### Demo下载
 [![downloads](https://img.shields.io/badge/downloads-430k-blue.svg)](https://github.com/zhou-you/RxEasyHttp/blob/master/RxEasyHttp-Demo.apk?raw=true) -->
 
+## 使用介绍
 ### 在相关build.gradle内做如下设置
 ```
 allprojects {
