@@ -1,6 +1,6 @@
 ## SmartSignet_OA_Kotlin(停止维护)
 
-政企(信产)研发中心 OA智能签章框架Kotlin版
+OA智能签章框架Kotlin版
 
 想使用Java版本的框架请移步 [OA智能签章框架Java版](https://github.com/ZealP/SmartSignet_OA_Java)
 
